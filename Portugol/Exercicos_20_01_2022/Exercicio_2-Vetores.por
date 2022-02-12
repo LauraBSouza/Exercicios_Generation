@@ -1,42 +1,44 @@
 programa
 {
-    /*  2. Um dado é lançado 10 vezes e o valor correspondente é anotado. Faça um programa
+    /*  
+            2. Um dado é lançado 10 vezes e o valor correspondente é anotado. Faça um programa
            que gere um vetor com os lançamentos, escreva esse vetor. A seguir determine e
-          imprima a média aritmética dos lançamentos, contabilize e apresente também   
-          quantas foram as ocorrências da maior pontuação.  */
+           imprima a média aritmética dos lançamentos, contabilize e apresente também   
+           quantas foram as ocorrências da maior pontuação. 
+    */
+
+      inclua biblioteca Util
 	
 	funcao inicio()
 	{
-		real media, vetor[10], somaVetor=0, maiorNumero=0
-		inteiro qMaiorNumero=0, x
+		real media, somaDado=0.0
+		inteiro dado[10], maiorNumero=0, qMaiorNumero=0, x
 
 		para(x=0;x<10;x++) 
 		{
-			escreva("Escreva um número: ")
-			leia(vetor[x])
+			dado[x] = Util.sorteia(1,6) // gera um número aleatório entre 1 e 6
 
-               limpa()
-			somaVetor += vetor[x]
+			somaDado += dado[x]
 
-			se (vetor[x] >= maiorNumero) {
-				se (vetor[x] == maiorNumero) {
+			se (dado[x] >= maiorNumero) {
+				se (dado[x] == maiorNumero) {
 					qMaiorNumero++
 				}  senao {
 					qMaiorNumero = 0
 					qMaiorNumero++
 				         }
-				     maiorNumero = vetor[x]
+				     maiorNumero = dado[x]
 		                                  }
 		}
 
 		 para(x=0;x<10;x++) {
-			escreva(vetor[x] + " ")
+			escreva(dado[x] + " ")
 		    }
 
-		    media = somaVetor / 10
+		    media = somaDado / 10
 		    escreva("\nA média de todos os valores é de: " + media)
 		    escreva("\nO maior número foi: " + maiorNumero)
-		    escreva("\nA ocorrência em que " +maiorNumero+ " apareceu foi de: " +qMaiorNumero+ " vezes")
+		    escreva("\nA ocorrência em que " +maiorNumero+ " apareceu foi de: " +qMaiorNumero+ " vez(es)")
 		
 	
 }
@@ -46,9 +48,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 552; 
+ * @POSICAO-CURSOR = 591; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetor, 10, 14, 5}-{maiorNumero, 10, 38, 11}-{qMaiorNumero, 11, 10, 12};
+ * @SIMBOLOS-INSPECIONADOS = {qMaiorNumero, 15, 35, 12};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
