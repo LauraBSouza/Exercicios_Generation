@@ -1,11 +1,15 @@
 programa
 {
-	
+	/*
+	     3. Faça um sistema que leia o tempo de duração de um evento em uma fábrica
+         expressa em segundos e mostre-o expresso em horas, minutos e segundos.
+	 */
+	 
 	funcao inicio()
 	{
 		inteiro duracao,horas,minutos,segundos
 
-		escreva("Quantos segundos tem a duração do evento?") //18000
+		escreva("Quantos segundos tem a duração do evento?") 
 		leia(duracao)
 
 		horas = duracao / 3600
@@ -21,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 220; 
+ * @POSICAO-CURSOR = 301; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
