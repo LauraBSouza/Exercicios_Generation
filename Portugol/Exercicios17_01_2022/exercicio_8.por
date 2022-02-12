@@ -18,7 +18,7 @@ programa
 		leia(custoFabrica)
 
 		custoConsumidor = math.arredondar((custoFabrica + (custoFabrica * 0.28) + (custoFabrica * 0.45)), 2)
-		escreva("Escreva o custo do consumidor é de R$ " + (custoConsumidor))
+		escreva("O custo do consumidor é de R$ " + (custoConsumidor))
 		
 	}
 }
@@ -27,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 629; 
+ * @POSICAO-CURSOR = 662; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
